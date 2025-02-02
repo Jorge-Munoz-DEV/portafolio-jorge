@@ -1,0 +1,120 @@
+/* Header CSS */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #35424a;
+    color: #ffffff;
+    height: 100vh;
+    padding: 0 20px;
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/cc8bcfa4-497e-4878-a6c8-b2572ecd096e/dj3g78k-004e8f52-511a-46b8-8f82-03a4e3fef92f.png/v1/fit/w_828,h_496/rb_413_by_kalenchooo_dj3g78k-414w-2x.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzY4IiwicGF0aCI6IlwvZlwvY2M4YmNmYTQtNDk3ZS00ODc4LWE2YzgtYjI1NzJlY2QwOTZlXC9kajNnNzhrLTAwNGU4ZjUyLTUxMWEtNDZiOC04ZjgyLTAzYTRlM2ZlZjkyZi5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.Hkry78ObMZmiF-QADand_LBiuIfx5lut9rgfemPWpHw');
+    background-size: cover;
+    background-position: center center;
+}
+
+.left {
+    max-width: 50%;
+    text-align: left;
+    padding: 20px;
+    margin-left: 50px;
+}
+
+.left h1, .left h2, .left h3 {
+    margin: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.right .circle {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 250px;
+}
+
+.right .circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 1024px) {
+    /* Tablet and small screens */
+    header {
+        flex-direction: column; /* Cambiar a columna en pantallas más pequeñas */
+        height: auto; /* Ajustar la altura */
+    }
+
+    .left {
+        max-width: 100%; /* La sección izquierda ocupa todo el ancho */
+        margin-left: 0; /* Eliminar el margen izquierdo */
+        text-align: center; /* Centrar el texto */
+    }
+
+    .right .circle {
+        width: 200px; /* Reducción del tamaño del círculo */
+        height: 200px;
+        margin-right: 0; /* Eliminar el margen derecho */
+    }
+}
+
+@media (max-width: 768px) {
+    /* Smartphones y pantallas más pequeñas */
+    header {
+        padding: 20px; /* Aumentar el padding */
+    }
+
+    .left {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .right .circle {
+        width: 150px; /* Asegurarse de que el círculo se ajuste en pantallas pequeñas */
+        height: 150px;
+    }
+
+    nav ul li {
+        display: block; /* Cambiar la disposición de los elementos del menú a columna */
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Smartphones en orientación vertical */
+    .left h1, .left h2, .left h3 {
+        font-size: 1.2em; /* Reducir el tamaño de fuente */
+    }
+
+    .right .circle {
+        width: 120px; /* Ajustar el tamaño del círculo aún más */
+        height: 120px;
+    }
+
+    nav ul li {
+        font-size: 0.9em; /* Reducir el tamaño de la fuente del menú */
+    }
+}
+.card_network_header {
+    display: flex;
+    align-items: center;
+  }
